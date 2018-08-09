@@ -28,3 +28,7 @@ npm run start:dev
 # Run the production version
 npm run start:prod
 ```
+
+## TODO
+* Polyfilling
+* Minify everything
