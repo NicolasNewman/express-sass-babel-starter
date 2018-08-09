@@ -9,7 +9,22 @@ This repository is a straightforward boilerplate for building projects with ES6,
 
 ## Getting Started
 ```sh
+# Download the repository
 git clone https://github.com/NicolasNewman/express-sass-babel-starter.git
+cd express-sass-babel-starter
 
+# Make it your own
+rm -rf .git && git init && npm init
+
+# Install dependencies
 npm install
+
+# Start a live server for development
+npm run start:dev
+
+# Compile the project for production
+./build.sh
+
+# Run the production version
+npm run start:prod
 ```
