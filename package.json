@@ -1,0 +1,28 @@
+{
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "A quickstart template for express and sass",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass-w": "node-sass sass/main.scss public/css/styles.css -w",
+    "nodemon": "nodemon app.js",
+    "start:dev": "concurrently \"npm run compile:sass-w\" \"npm run nodemon\"",
+    "start:prod": "cross-env NODE_ENV=production node dist/app.js"
+  },
+  "author": "Nicolas",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.24.6",
+    "concurrently": "^3.6.1",
+    "cross-env": "^5.2.0",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3"
+  }
+}
